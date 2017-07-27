@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
 * {
 	margin: 0; 
 	padding: 0;
@@ -19,7 +21,7 @@ a {
 }
 
 .container {
-	font-family: "Arial Black", Helvetica, "Nimbus Sans L", sans-serif;
+	font-family: 'Lato', Helvetica, sans-serif;
 	max-width: 970px;
 }
 
@@ -49,10 +51,19 @@ header {
 }
 
 .navbar-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .navbar {
@@ -63,8 +74,12 @@ header {
 }
 
 .header-logo, .footer-logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .navbar-inverse .navbar-brand {
@@ -76,7 +91,8 @@ header {
 }
 
 span.rotateTop {
-	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
 	display: inline-block;
 	color: grey;
 }
@@ -101,6 +117,7 @@ span.rotateTop {
 	border-radius: 0;
 	padding: 6px 10px;
 	height: 34px;
+	background-color: #ECECEC; 
 }
 
 @media screen and (max-width: 767px) {
@@ -109,8 +126,13 @@ span.rotateTop {
 	}
 
 	.header-logo {
-		flex-direction: row;
-		justify-content: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		padding: 10px 0;
 	}
 }
@@ -135,7 +157,7 @@ span.rotateTop {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: white;
+ 	color: white;
 }
 
 .navbar-inverse .navbar-collapse {
@@ -147,7 +169,8 @@ span.rotateTop {
 }
 
 .rotate-menu {
-	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
 	display: inline-block;
 }
 
@@ -177,10 +200,19 @@ span.rotateTop {
 
 
 .social {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 15px 0;
 }
 
@@ -589,7 +621,7 @@ hr {
 .table h1 {
 	color: #474747;
 	margin: 0 5px;
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 48px;
 }
 
@@ -684,6 +716,8 @@ hr {
 	width: 50%;
 	z-index: -1;
 }
+
+
 
 
 
